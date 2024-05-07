@@ -1,0 +1,96 @@
+﻿.calendar {
+    margin: 20px auto;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('/Pictures/Overview.png');
+    background-size: cover; /* Cover the entire header with the background image */
+    background-position: center; /* Center the background image */
+    color: #fffff; /* Text color */
+    padding: 50px; /* Padding for the content inside the header */
+    text-align: center;
+}
+
+.calendar {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent images from wrapping to the next line */
+}
+
+.scroll-content {
+    display: inline-block; /* Make the container inline-block to ensure it doesn't take full width */
+    padding: 10px; /* Add padding to the container */
+}
+
+    .scroll-content img {
+        display: inline-block; /* Display images inline */
+        max-width: 100%; /* Ensure images don't exceed container width */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Add margin between images */
+    }
+
+.scroll-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.scroll-content {
+    display: inline-block;
+    padding: 10px;
+    z-index: 0;
+    scroll-snap-align: start;
+}
+
+    .scroll-content img {
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+        margin-right: 10px;
+        scroll-snap-align: start;
+    }
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+    .scroll-button:hover {
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    .scroll-button.prev {
+        left: 0;
+    }
+
+    .scroll-button.next {
+        right: 0;
+    }
+
+.container {
+    position: absolute;
+    width: 100%;
+}
