@@ -10,10 +10,10 @@ body {
 }
 
 .header {
-    background-image: url('/Pictures/Overview.png');
+    background-image: url('Pictures/Overview.png');
     background-size: cover; /* Cover the entire header with the background image */
     background-position: center; /* Center the background image */
-    color: #fffff; /* Text color */
+    color: #000; /* Text color */
     padding: 50px; /* Padding for the content inside the header */
     text-align: center;
 }
