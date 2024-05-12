@@ -1,21 +1,30 @@
-﻿.calendar {
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.calendar {
     margin: 20px auto;
     width: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     padding: 0;
 }
-
-.header {
-    background-image: url('Pictures/Overview.png');
-    background-size: cover; /* Cover the entire header with the background image */
-    background-position: center; /* Center the background image */
-    color: #000; /* Text color */
-    padding: 50px; /* Padding for the content inside the header */
-    text-align: center;
+header h1{
+    font-size: 70px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #b393d3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #957dad,
+               1px 2px 0px #957dad,
+               1px 3px 0px #957dad,
+               1px 4px 0px #957dad,
+               1px 5px 0px #957dad,
+               1px 6px 0px #957dad,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
 }
 
 .calendar {
