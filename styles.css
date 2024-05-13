@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+﻿
 
 .calendar {
     margin: 20px auto;
@@ -9,22 +9,42 @@ body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     padding: 0;
 }
-header h1{
-    font-size: 70px;
-  font-weight: 600;
-  font-family: 'Roboto', sans-serif;
-  color: #b393d3;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 0px #957dad,
-               1px 2px 0px #957dad,
-               1px 3px 0px #957dad,
-               1px 4px 0px #957dad,
-               1px 5px 0px #957dad,
-               1px 6px 0px #957dad,
-               1px 10px 5px rgba(16, 16, 16, 0.5),
-               1px 15px 10px rgba(16, 16, 16, 0.4),
-               1px 20px 30px rgba(16, 16, 16, 0.3),
-               1px 25px 50px rgba(16, 16, 16, 0.2);
+.header {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #000; /* White text color */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    background-image: url('Pictures/Overview.png'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    padding: 20px; /* Add padding to the title to create space around the text */
+    text-shadow: 
+        -1px -1px 0 #313131,  
+        1px -1px 0 #363636,
+        -1px 1px 0 #363636,
+        1px 1px 0 #363636;
+}
+
+/* Additional styles for responsiveness */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 36px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 36px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
 }
 
 .calendar {
