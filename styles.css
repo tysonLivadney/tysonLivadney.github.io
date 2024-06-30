@@ -6,29 +6,25 @@
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #36d0db;
     color: white;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+    position: relative;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.my-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.my-links img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.hero {
+.header {
     background: url('hero-image.jpg') no-repeat center center;
     background-size: cover;
     height: 300px;
@@ -38,12 +34,12 @@ nav ul li a {
     align-items: center;
 }
 
-.hero h1 {
+.header h1 {
     margin: 0;
     font-size: 3em;
 }
 
-.hero p {
+.header p {
     font-size: 1.5em;
 }
 
