@@ -1,34 +1,72 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chez G's</title>
+    <title>Tyson Livadney - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+        })();
+    </script>
 </head>
 <body>
-    <div class="header">
-        <h1>Chez G's</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Tyson Livadney</h1>
+            <p>Computer Science Projects</p>
+        </div>
+    </header>
+    
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+        </section>
         
-    </div>
-    <div class="image-container">
-        <button class="fullscreen-btn">Fullscreen</button>
-        <img src="Pictures/Entrance.png" alt="Entrance">
-    </div>
-    <div>
-        <img src="Pictures/Living Room.jpg" alt="Entrance">
-        <img src="Pictures/View.jpg" alt="Entrance">
-        <img src="Pictures/Bedroom.jpg" alt="Entrance">
-        <img src="Pictures/Bedroom2.jpg" alt="Entrance">
-        <img src="Pictures/Kitchen.jpg" alt="Entrance">
-        <img src="Pictures/Bathroom.jpg" alt="Entrance">
-    </div>
-    <div class="amenities">
-        <img src="Pictures/PartyRoom.png" alt="Entrance">
-        <img src="Pictures/Patio1.png" alt="Entrance">
-        <img src="Pictures/Patio2.png" alt="Entrance">
-        <img src="Pictures/Patio3.png" alt="Entrance">
-    </div>
+        <section id="resume">
+            <h2>Resume</h2>
+            <embed src="resume.pdf" type="application/pdf" width="100%" height="600px" />
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Tyson Livadney</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
