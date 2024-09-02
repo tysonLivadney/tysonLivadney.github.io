@@ -20,7 +20,7 @@ header {
 }
 
 .my-links img {
-    width: 30px; /* Adjust the size as needed */
+    width: 10%; /* Adjust the size as needed */
     height: auto;
 }
 
@@ -52,7 +52,7 @@ section {
 }
 
 .project {
-    background: #f4f4f4;
+    background: #00000004;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;

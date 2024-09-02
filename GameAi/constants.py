@@ -1,0 +1,31 @@
+# constants.py
+
+import pygame
+
+# Screen constants
+SCREEN_WIDTH, SCREEN_HEIGHT = 800, 600
+BG_COLOR = (135, 206, 235)  # Light blue background
+WHITE = (255, 255, 255)
+FPS = 60
+
+# Player constants
+PLAYER_WIDTH, PLAYER_HEIGHT = 20, 35
+PLAYER_COLOR = (255, 0, 0)  # Red
+GRAVITY = 0.13
+JUMP_STRENGTH = -6.5
+PLAYER_SPEED = 5
+DASH_SPEED = 60
+DASH_DURATION = 6  # lower = longer
+WALL_JUMP_STRENGTH = -8
+MAX_FALL_SPEED = 20
+
+# Platform constants
+PLATFORM_COLOR = (0, 255, 0)  # Green
+PLATFORM_WIDTH, PLATFORM_HEIGHT = 100, 20
+platform_speed = 1
+MAX_PLATFORM_SPEED = 10
+
+# Projectile constants
+PROJECTILE_COLOR = (255, 0, 0)  # Red
+PROJECTILE_WIDTH, PROJECTILE_HEIGHT = 20, 20
+PROJECTILE_SPEED = 6
